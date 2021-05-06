@@ -12,7 +12,7 @@ gcp_instance_type = "f1-micro"
 gcp_label_key = "integration-test"
 gcp_label_value = "terraform"
 
-hazelcast_mancenter_version = "4.2021.04"
+hazelcast_mancenter_version = SET_MANAGEMENT_CENTER_VERSION
 
 gcp_ssh_user = "ubuntu"
 
