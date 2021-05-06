@@ -63,7 +63,7 @@ jobs:
           LATEST_TAG=$((IFS=$'\n' && echo "${FILTERED_TAGS[*]}") | sort | tail -n 1)
           echo $LATEST_TAG
 
-          sed -i -e "s/SET_MANAGEMENT_CENTER_VERSION/${LATEST_TAG:1}/g" ../hazelcast-gcp/.github/terraform/terraform.tfvars
+          sed -i -e "s/SET_MANAGEMENT_CENTER_VERSION/\"${LATEST_TAG:1}\"/g" ../hazelcast-gcp/.github/terraform/terraform.tfvars
 
 
       # DOWNLOAD HAZELCAST JAR WITH VERSION DEFINED IN POM.XML
